@@ -1,0 +1,14 @@
+Write
+  info notification when dilemmas and draw decks are out (infobox)
+  Finish Stack Classes (  events as containers? event stack? )
+  view windows showing individual player space
+  @this_player frame always at top?
+  individual ways to stop/flip
+  mission complete visualization (gray out? check box?)
+  Maybe have view menu that has core and orbits, FXMainWindow style
+  mission attempt window? (maybe)
+  internal chat program
+  infobox code
+  
+Fix
+  display_label_text (not 100% accurate)
