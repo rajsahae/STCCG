@@ -1,12 +1,14 @@
 This was my attempt at a ruby implementation of the Star Trek Customizable Card Game.
 I created this in April 2007.  I developed it for Windows, and it uses FXRuby for it's GUI.
-I have updated the code a bit to run, but please take note that this game never really worked and I haven't looked at this code in 4 years so things will not work and I currently have no idea how to fix then, nor do I plan to.
+
+I have looked at the code but it doesn't seem to run right now. Please take note that this game never really worked and I haven't looked at this code in 4 years so things will not work and I currently have no idea how to fix them.  Maybe someday I will take a look and get the communication working.  The game engine itself should be working well enough.  It was the multiplayer aspect that I never got working.
 
 The images needed are not on GIT.  They are hosted at www.rajsahae.com/~raj/STPics and must be placed in a folder named STPics.  
  
 You must have Ruby version 1.8.5 or later and FXRuby 1.6 gem installed to run this game
 
 Hosting a game:
+The $URI line is currently hardcoded.  It should contain your local system IP address.
 Run the file 'stserver.rb'
 You may alter the order of players that have joined by using the "Move Up", “Move Down”, or “Randomize” buttons.
 Once the desired number of players has joined the game, press “Start Game”

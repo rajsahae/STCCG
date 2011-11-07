@@ -4,7 +4,7 @@ $deck_dir = './STDecks/'
 $pic_dir = './STPics/'
 $pic_type = ".jpg"
 $port = 7824 #STCG on phone pad
-$uri = "druby://127.0.0.1:7824"
+$uri = "druby://192.168.0.194:7824"
 $: << $file_dir
 #$stdout = $stderr = File.new("stserver.log", "w")
 
