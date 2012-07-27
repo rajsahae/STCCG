@@ -1,43 +1,55 @@
 This was my attempt at a ruby implementation of the Star Trek Customizable Card Game.
 I created this in April 2007.  I developed it for Windows, and it uses FXRuby for it's GUI.
 
-I have looked at the code but it doesn't seem to run right now. Please take note that this game never really worked and I haven't looked at this code in 4 years so things will not work and I currently have no idea how to fix them.  Maybe someday I will take a look and get the communication working.  The game engine itself should be working well enough.  It was the multiplayer aspect that I never got working.
+I have looked at the code but it doesn't seem to run right now. Please take note that this game
+never really worked and I haven't looked at this code in 4 years so things will not work,
+and I currently have no idea how to fix them.  Maybe someday I will take a look and get the
+communication working.  The game engine itself should be working well enough.
+It was the multiplayer aspect that I never got working.
 
-The images needed are not on GIT.  They are hosted at www.rajsahae.com/~raj/STPics and must be placed in a folder named STPics.  
+The images needed are not on GIT.  They are hosted at www.rajsahae.com/~raj/STPics and must
+be placed in a folder named STPics.  
  
 You must have Ruby version 1.8.5 or later and FXRuby 1.6 gem installed to run this game
 
 Hosting a game:
 The $URI line is currently hardcoded.  It should contain your local system IP address.
 Run the file 'stserver.rb'
-You may alter the order of players that have joined by using the "Move Up", “Move Down”, or “Randomize” buttons.
-Once the desired number of players has joined the game, press “Start Game”
-If you wish to close/cancel/exit the server, press “Stop Game”
+You may alter the order of players that have joined by using the "Move Up", ï¿½Move Downï¿½, or ï¿½Randomizeï¿½ buttons.
+Once the desired number of players has joined the game, press ï¿½Start Gameï¿½
+If you wish to close/cancel/exit the server, press ï¿½Stop Gameï¿½
 
 Joining a game:
-	Run the file ‘stclient.rb’
-	Enter your name, deck filename (which must be placed in the STDecks folder and be of format *.txt).  The deckloader is designed to interpret decks created with the Unicomplex Deckbuilder, found at http://www.heardworld.com/unicomplex/.
-	If you wish to create your deckfile yourself, please refer to the next section “Creating your own deckfile” at the end of this document.
+	Run the file ï¿½stclient.rbï¿½
+	Enter your name, deck filename (which must be placed in the STDecks folder and be of format *.txt).
+	The deckloader is designed to interpret decks created with the Unicomplex Deckbuilder, 
+	found at http://www.heardworld.com/unicomplex/.
+	If you wish to create your deckfile yourself, please refer to the next 
+	section ï¿½Creating your own deckfileï¿½ at the end of this document.
 	Enter the IP address of the game which you wish to join, then press Join.
 	Press cancel to close the game client.
 	
 Creating your own deckfile
-	If you have a deck and you don’t wish to input it through the deckbuilder, or you can’t access the deckbuilder, you can type the deckfile yourself.
+	If you have a deck and you donï¿½t wish to input it through the deckbuilder, 
+	or you canï¿½t access the deckbuilder, you can type the deckfile yourself.
 	The deckfile must be a *.txt document.
-The file should contain a single line of comma-delimited entries in the following format: t.eeddd.n where the letters in the format indicate the following:
-t: single digit number indicating card type, indicated by
-0 - dilemma
-1 - equipment
-2 - event
-3 - interrupt
-4 - mission
-5 - personnel
-6 - ship
-7 - headquarters
-ee: double digit number referring to the expansion series the card belongs to
-ddd: triple digit number referring to the card set number
-n: single digit number(1-3) indicating the number of that card in your deck
+The file should contain a single line of comma-delimited entries in the following format: t.eeddd.n 
+where the letters in the format indicate the following:
+	t: single digit number indicating card type, indicated by
+		0 - dilemma
+		1 - equipment
+		2 - event
+		3 - interrupt
+		4 - mission
+		5 - personnel
+		6 - ship
+		7 - headquarters
+	ee: double digit number referring to the expansion series the card belongs to
+	ddd: triple digit number referring to the card set number
+	n: single digit number(1-3) indicating the number of that card in your deck
 Expansion and Set Number can be found on the bottom right corner of your card.
 
 Playing the game:
-	The player in the top frame starts the game.  You must keep track of your own points, counters, turn-phase, etc.  The game will automatically draw your hand and display it at the start of the game.
+	The player in the top frame starts the game.
+	You must keep track of your own points, counters, turn-phase, etc.
+	The game will automatically draw your hand and display it at the start of the game.
